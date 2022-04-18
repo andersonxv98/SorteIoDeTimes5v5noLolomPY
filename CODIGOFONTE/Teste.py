@@ -34,8 +34,8 @@ def Sorteia_praMIM_Percival(jogador1, jogador2, jogador3, jogador4, jogador5, jo
     for i in range(5):
         if (b.__contains__(a[i])):
             b.remove(a[i])
-    print('Time 1:', a)
-    print('team2: ', b)
+    #print('Time 1:', a)
+    #print('team2: ', b)
 
     nomeTeam1 = []
     nomeaTeam2 = []
@@ -44,7 +44,7 @@ def Sorteia_praMIM_Percival(jogador1, jogador2, jogador3, jogador4, jogador5, jo
         nomeTeam1.append(nomeTotal[a[z] - 1])
         nomeaTeam2.append(nomeTotal[b[z] - 1])
 
-    print("TIME AZUL: ", nomeTeam1)
-    print("TIME NÃO AZUL: ", nomeaTeam2)
+    print("20tao frontlaner")
+    #print("TIME NÃO AZUL: ", nomeaTeam2)
     return nomeTeam1, nomeaTeam2
     # print(result)

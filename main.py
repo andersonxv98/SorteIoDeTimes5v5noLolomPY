@@ -63,23 +63,23 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(container)
 
     def Add_resultado_sorteio(self, result1, result2):
-        print("Entrou ADD_resuldado_sorteio")
-        print("TIME 1 DENTRO DA VIEW CONCOLES: ", result1)
-        print("TIME 1 DENTRO DA VIEW CONCOLES: ", result2)
-        novo_label1 = QLabel("teste1")
-        novo_label2 = QLabel("teste2")
+        #print("Entrou ADD_resuldado_sorteio")
+        #print("TIME 1 DENTRO DA VIEW CONCOLES: ", result1)
+        #print("TIME 1 DENTRO DA VIEW CONCOLES: ", result2)
+        #novo_label1 = QLabel("teste1")
+        #novo_label2 = QLabel("teste2")
         team1 = "time 1: "
         team2 = "time 2: "
-        for x in result1:
-            team1 += " , "+x
-        for y in result2:
-            team2 += " , "+y
+        #for x in result1:
+         #   team1 += x +" , "
+        #for y in result2:
+         #   team2 += y +" , "
 
-        self.time1_lb.setText(team1)
-        self.time2_lb.setText(team2)
+        self.time1_lb.setText(team1  + str(result1))
+        self.time2_lb.setText(team2 +  str(result2))
 
     def Chama_outra_class(self):
-        print("Entrou na func Chama_outra_class")
+        #print("Entrou na func Chama_outra_class")
         var1  = self.jogador1.text()
         var2 = self.jogador2.text()
         var3 = self.jogador3.text()
